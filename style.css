@@ -106,104 +106,26 @@ input, select, textarea,
   background: #b0b0b0 !important;
 }
 /* Make ports small black circles - inputs and outputs */
-
-.red-ui-flow-port-input,
-.red-ui-flow-port-output {         
-    opacity: 1 !important; 
-    border-radius: 50px !important;
-
-/* Ports: force small, solid black, perfect circles */
-
 .red-ui-flow-port-input,
 .red-ui-flow-port-output {
-    opacity: 1 !important;
-    /* Optional: slight scale if you want extra control beyond r */
-    /* transform: scale(0.8); */ 
+    opacity: 1 !important;
+    border-radius: 50px !important;
 }
-
-/* The REAL shape: target the <circle> element directly */
-.red-ui-flow-port-input circle,
-.red-ui-flow-port-output circle {
-    fill: #000000 !important;       /* Solid black – no transparency */
-    stroke: #000000 !important;     /* Black outline; use none or #0000 for no border */
-    stroke-width: 0.5px !important; /* Very thin border (or 0px !important; for none) */
-    r: 3.5 !important;              /* Radius controls size: 2.5–4 = tiny dot; 5 = small clickable */
-    /* No border-radius here – circles ignore it */
+/* Target the actual circle inside the <g> group */
+.red-ui-flow-port-input rect,
+.red-ui-flow-port-output rect {
+    fill: #000000 !important;
+    stroke: #000000 !important;
+    stroke-width: 1px !important;
+    r: 2 !important;
+    width: 7px !important;
+    height: 7px !important;
+    border-radius: 50px !important;
+   
 }
-
-/* Prevent size/color changes on interactions */
-.red-ui-flow-port-input:hover circle,
-.red-ui-flow-port-output:hover circle,
-.red-ui-flow-node[port-connected] .red-ui-flow-port-input circle,
-.red-ui-flow-node[port-connected] .red-ui-flow-port-output circle,
-.red-ui-flow-node.selected .red-ui-flow-port-input circle,
-.red-ui-flow-node.selected .red-ui-flow-port-output circle {
-    fill: #000000 !important;
-    stroke: #000000 !important;
-    r: 3.5 !important;              /* Lock size */
-}
-
-/* Target the main icon container - covers most cases */
-.red-ui-flow-node-icon,
-.red-ui-flow-node .red-ui-flow-node-icon,
-.red-ui-flow-node-icon > svg,
-.red-ui-flow-node-icon > img {
-    fill: #0000ff !important;       /* Black for SVG fill */
-    color: #0000ff !important;      /* Black for font/icon color */
-}
-
-/* Specifically target inline SVG icons (common for contrib nodes) */
-.red-ui-flow-node-icon svg {
-    fill: #0000ff !important;
-}
-
-/* If icons are paths inside SVGs (very common) */
-.red-ui-flow-node-icon path,
-.red-ui-flow-node-icon circle,
-.red-ui-flow-node-icon rect,
-.red-ui-flow-node-icon polygon {
-    fill: #0000ff !important;
-    stroke: #0000ff !important;     /* If any outlines */
-}
-
-/* For font-awesome / material icons that use color instead of fill */
-.red-ui-flow-node-icon i,
-.red-ui-flow-node-icon .fa,
-.red-ui-flow-node-icon [class*="fa-"] {
-    color: #0000ff !important;
-}
-
-/* Optional: Darken on hover/selection for better visibility */
-.red-ui-flow-node:hover .red-ui-flow-node-icon,
-.red-ui-flow-node.selected .red-ui-flow-node-icon {
-    fill: #0000ff !important;
-    color: #0000ff !important;
-}
-.red-ui-flow-node-button,
-.red-ui-flow-node[typeof="inject"] button,
-.red-ui-flow-node[type="inject"] .red-ui-flow-node-button,
-.red-ui-flow-node.inject .red-ui-flow-node-button {
-    background-color: #0000ff !important;   /* Nice mid-blue; change to any hex like #1976d2 (darker), #42a5f5 (lighter), etc. */
-    border-color: #0000ff !important;       /* Matching border for definition */
-    color: #ffffff !important;              /* White text/icon for contrast */
-    fill: #ffffff !important;               /* If any SVG icons inside */
-}
-
-/* Hover/active states – keep it blue but add feedback */
-.red-ui-flow-node-button:hover,
-.red-ui-flow-node[typeof="inject"] button:hover {
-    background-color: #1e88e5 !important;   /* Slightly darker on hover */
-    border-color: #1565c0 !important;
-}
-
-.red-ui-flow-node-button:active,
-.red-ui-flow-node[typeof="inject"] button:active {
-    background-color: #1565c0 !important;   /* Even darker when clicked */
-}
-
-/* Optional: Make it stand out more with rounded corners or shadow */
-.red-ui-flow-node-button,
-.red-ui-flow-node[typeof="inject"] button {
-    border-radius: 4px !important;          /* Slight rounding */
-    box-shadow: 0 1px 3px rgba(0,0,0,0.2) !important; /* Subtle shadow */
+/* Optional: Make them even smaller / more minimal */
+.red-ui-flow-port-input rect,
+.red-ui-flow-port-output rect {
+    r: 2 !important;
+    border-radius: 50px !important;
 }
