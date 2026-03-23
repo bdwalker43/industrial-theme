@@ -128,3 +128,13 @@ input, select, textarea,
 .red-ui-flow-node-icon-shade-border {
     stroke-width: 2;
 }
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.red-ui-flow-node-icon-background,
+.red-ui-flow-node-icon-shape {
+    z-index: -1 !important;  /* push icon bg behind everything */
+}
+
+.red-ui-flow-node rect {
+    stroke: #your-node-border-color !important;  /* match your node border if needed */
+    stroke-width: 2px !important;  /* thicker to cover edges */
+}
