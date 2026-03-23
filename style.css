@@ -10,7 +10,7 @@
   rx: 1 !important;
   ry: 1 !important;
   border-radius: 0 !important;
-  fill: #dcdcdc !important;
+  fill: #f5f5f5 !important;
 }
 .red-ui-flow-node-status-background {
   fill: transparent !important;
