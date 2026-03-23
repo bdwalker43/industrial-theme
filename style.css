@@ -18,6 +18,7 @@
 /* Blue header band on top of every node (T3000 style) */
 .red-ui-flow-node {
   position: relative;
+  stroke-width: 2;
 }
 .red-ui-flow-node::before {
   content: "";
