@@ -9,8 +9,8 @@
 .red-ui-flow-node ellipse,
 .red-ui-flow-node path,
 .red-ui-flow-node * {
-  rx: 0 !important;
-  ry: 0 !important;
+  rx: 1 !important;
+  ry: 1 !important;
   border-radius: 0 !important;
   fill: #c0c0c0 !important;
 }
@@ -18,7 +18,7 @@
 /* Blue header band on top of every node (T3000 style) */
 .red-ui-flow-node {
   position: relative;
-  stroke-width: 2 !important;
+  stroke-width: 3 !important;
 }
 .red-ui-flow-link-line {
   stroke-width: 1 !important;
