@@ -101,7 +101,7 @@ input, select, textarea,
 .red-ui-flow-node-icon use,
 .red-ui-flow-node-icon circle,
 .red-ui-flow-node-icon polygon {
-    fill: #5df2ec !important;          /* Your blue shade - change this hex! e.g. #1e90ff for brighter, #003366 for darker */
+    fill: #5df2ec !important; 
 }
 
 /* Fallback for icons using currentColor or inherit */
@@ -118,26 +118,7 @@ input, select, textarea,
 .red-ui-flow-node-icon-shape rect,
 .red-ui-flow-node-icon-background ellipse,
 .red-ui-flow-node-icon-shape ellipse {
-    fill: #003366 !important;          /* Darker blue for icon bg - or use #222222 for gray, #004d4d for teal-ish */
-    fill-opacity: 1 !important;        /* Solid, no transparency */
+    fill-opacity: 1 !important; 
     rx: 4 !important;
     ry: 4 !important;
-}
-
-/* Optional: Make icon bg slightly larger/visible if too small */
-.red-ui-flow-node-icon-background,
-.red-ui-flow-node-icon-shape {
-    transform: scale(1.1);             /* Slight scale-up if icons feel cramped */
-}
-
-/* 3. If you still want node body backgrounds different (e.g. teal like your example) - keep or adjust this */
-.red-ui-flow-node rect,
-.red-ui-flow-node ellipse {
-    fill: #008080 !important;          /* Teal example - or #333333 for gray */
-}
-
-/* Selected/highlight state - to see which node is active */
-.red-ui-flow-node.selected .red-ui-flow-node-icon-background,
-.red-ui-flow-node.selected .red-ui-flow-node-icon-shape {
-    fill: #004080 !important;          /* Slightly brighter when selected */
 }
