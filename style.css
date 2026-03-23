@@ -26,6 +26,13 @@
 .red-ui-flow-link-line {
   stroke-width: 1 !important;
 }
+.red-ui-palette-node {
+  background: #ffffff !important;
+  border-radius: 1px !important;
+  border: 3px solid #0000ff !important;
+  
+
+}
 .red-ui-flow-node::before {
   content: "";
   position: absolute;
@@ -61,10 +68,7 @@ input, select, textarea,
 .red-ui-flow-port-input,
 .red-ui-flow-port-output {         
     opacity: 1 !important;  
-    border-radius: 50 !important;
-    rx: 30 !important;
-    ry: 30 !important;
-    padding-left: 12px !important;
+
 }
 
 /* Target the actual circle inside the <g> group */
@@ -74,18 +78,16 @@ input, select, textarea,
     stroke: #000000 !important;     
     stroke-width: 1px !important;   
     r: 2 !important;
-    width: 5px !important;
-    height: 5px !important;
-    padding-left: 12px !important;
+    width: 8px !important;
+    height: 8px !important;
     
-
 }
 
 /* Optional: Make them even smaller / more minimal */
 .red-ui-flow-port-input rect,
 .red-ui-flow-port-output rect {
     r: 2 !important;  
-    padding-left: 12px !important;
+
 
 }
 
