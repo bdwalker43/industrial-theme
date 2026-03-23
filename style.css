@@ -17,6 +17,14 @@
   background: transparent !important;
   fill-opacity: 0 !important;
 }
+.red-ui-palette-port {
+  background: #000000 !important;
+  border: #000000 !important;
+}
+.red-ui-palette-node {
+  border: 4px solid #0000ff !important;
+  border-radius: 3px;
+}
 .red-ui-flow-node {
   position: relative;
   stroke-width: 3 !important;
