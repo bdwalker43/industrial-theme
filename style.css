@@ -44,6 +44,8 @@ input, select, textarea,
   border: 2px solid #0000ff !important;
   background: #c0c0c0 !important;
   color: #0000ff !important;
+  border-radius: 0 !imporant;
+  stroke-width: 2 !important;
 }
 
 /* Hover/selected states a bit darker gray */
