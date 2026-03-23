@@ -21,10 +21,7 @@
   background: #000000 !important;
   border: #000000 !important;
 }
-.red-ui-flow-node-icon-shade {
-  fill-opacity: 0 !important;
-  fill: #0000ff !important;
-}
+
 input, select, textarea, .red-ui-button, .red-ui-tab, .red-ui-palette-node {
   border: 4px solid #0000ff !important;
   border-radius: 3px;
@@ -94,4 +91,48 @@ input, select, textarea,
 .red-ui-flow-port-output rect {
     r: 2 !important;                
 
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Force ALL node icons to solid blue (adjust #0066cc to your preferred blue shade) */
+.red-ui-flow-node-icon,
+.red-ui-flow-node-icon path,
+.red-ui-flow-node-icon svg path,
+.red-ui-flow-node-icon * {
+    fill: #0066cc !important;          /* main icon color - blue */
+    stroke: #0066cc !important;        /* if any stroked elements */
+    color: #0066cc !important;         /* fallback for currentColor / non-SVG */
+}
+
+/* Fix any white/transparent icons specifically (common in some contrib nodes) */
+.red-ui-flow-node-icon:not([fill]) path,
+.red-ui-flow-node-icon path[fill="white"],
+.red-ui-flow-node-icon path[fill="#ffffff"] {
+    fill: #0066cc !important;
+}
+
+/* Optional: Make icon shade/background (the rounded rect behind icon) a contrasting color, e.g. darker blue/gray */
+.red-ui-flow-node-icon-background,
+.red-ui-flow-node-icon-shape {
+    fill: #003366 !important;          /* darker blue-gray for icon bg */
+    fill-opacity: 0.9 !important;
+}
+
+/* Node backgrounds - example: all nodes in a uniform teal-ish color with subtle variation if wanted */
+.red-ui-flow-node rect,
+.red-ui-flow-node ellipse {
+    fill: #008080 !important;          /* teal background for all nodes */
+    rx: 5 !important;
+    ry: 5 !important;
+}
+
+/* If you want slight variation by category (still uniform tone) */
+.red-ui-flow-node.type-inject rect,
+.red-ui-flow-node.type-debug rect { fill: #009999 !important; }   /* lighter teal for inputs/debug */
+
+.red-ui-flow-node.type-function rect { fill: #006666 !important; } /* darker for function nodes */
+
+/* Selected node outline (to keep it visible) */
+.red-ui-flow-node.selected rect {
+    stroke: #00ccff !important;        /* bright cyan outline when selected */
+    stroke-width: 2.5px !important;
 }
