@@ -7,8 +7,8 @@
 .red-ui-flow-node ellipse,
 .red-ui-flow-node path,
 .red-ui-flow-node * {
-  rx: 1 !important;
-  ry: 1 !important;
+  rx: 0.5 !important;
+  ry: 0.5 !important;
   border-radius: 0 !important;
   fill: #f0f0f0 !important;
 }
