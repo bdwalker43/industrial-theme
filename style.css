@@ -56,8 +56,7 @@ input, select, textarea,
 /* Make ports small black circles - inputs and outputs */
 
 .red-ui-flow-port-input,
-.red-ui-flow-port-output {
-    transform: scale(0.6);          /* Shrink overall group size ~60% of default */
+.red-ui-flow-port-output {         
     opacity: 1 !important;          /* Ensure visibility */
 }
 
@@ -67,11 +66,11 @@ input, select, textarea,
     fill: #000000 !important;       /* Pure black fill */
     stroke: #000000 !important;     /* Black border if any */
     stroke-width: 1px !important;   /* Thin border or adjust to 0 for no outline */
-    r: 5 !important;                /* Radius – default is usually ~6-7px; 4-5px = small */
+    r: 10 !important;                /* Radius – default is usually ~6-7px; 4-5px = small */
 }
 
 /* Optional: Make them even smaller / more minimal */
 .red-ui-flow-port-input circle,
 .red-ui-flow-port-output circle {
-    r: 4 !important;                /* Tiny circles */
+    r: 10 !important;                /* Tiny circles */
 }
