@@ -60,7 +60,8 @@ input, select, textarea,
 
 .red-ui-flow-port-input,
 .red-ui-flow-port-output {         
-    opacity: 1 !important;          /* Ensure visibility */
+    opacity: 1 !important;  
+    border-radius: 50 !important;
 }
 
 /* Target the actual circle inside the <g> group */
@@ -71,6 +72,8 @@ input, select, textarea,
     stroke-width: 1px !important;   
     r: 2 !important;
     width: 5px !important;
+    height: 5px !important;
+    
 
 }
 
