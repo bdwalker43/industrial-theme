@@ -11,6 +11,7 @@
   ry: 0.5 !important;
   border-radius: 0 !important;
   fill: #f0f0f0 !important;
+  font-size: 12px !important;
 }
 .red-ui-flow-node-status-background {
   fill: transparent !important;
