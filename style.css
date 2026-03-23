@@ -18,6 +18,10 @@
 /* Blue header band on top of every node (T3000 style) */
 .red-ui-flow-node {
   position: relative;
+  stroke-width: 2 !important;
+}
+.red-ui-flow-link-line {
+  stroke-width: 1 !important;
 }
 .red-ui-flow-node::before {
   content: "";
@@ -25,7 +29,7 @@
   left: 2px;
   right: 2px;
   top: 2px;
-  height: 16px;  /* Adjust height if too thick/thin */
+  height: 14px;  /* Adjust height if too thick/thin */
   background: #0000ff;  /* Pure blue */
   pointer-events: none;
   z-index: 1;  /* Above background, below text/icons — try 0 or 2 if issues */
