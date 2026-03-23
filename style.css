@@ -30,10 +30,8 @@
 /* Make palette nodes (left sidebar blocks) white background */
 .red-ui-palette-node {
     background: #ffffff !important;     /* Pure white – or #f8f8f8 for off-white/soft */
-    border: 1px solid #e0e0e0 !important;  /* Light border to separate them; optional, remove if unwanted */
-    border-radius: 4px !important;      /* Slight rounding to match modern look */
-    margin: 4px 8px !important;         /* A bit of spacing */
-    box-shadow: none !important;        /* Remove any default shadows if present */
+    border: 3px solid #0000ff !important;  /* Light border to separate them; optional, remove if unwanted */
+    border-radius: 1px !important;      /* Slight rounding to match modern look *
 }
 .red-ui-flow-node::before {
   content: "";
