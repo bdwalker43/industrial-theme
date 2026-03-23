@@ -18,7 +18,6 @@
 /* Blue header band on top of every node (T3000 style) */
 .red-ui-flow-node {
   position: relative;
-  stroke-width: 2;
 }
 .red-ui-flow-node::before {
   content: "";
@@ -35,7 +34,6 @@
 /* Node label text - make sure it's readable (black for contrast on gray; or blue if preferred) */
 .red-ui-flow-node text {
   fill: #0000ff !important;  
-  font-weight: bold !important;
 }
 
 /* Extra blue borders on inputs, buttons, tabs for that industrial look */
@@ -45,7 +43,6 @@ input, select, textarea,
   background: #c0c0c0 !important;
   color: #0000ff !important;
   border-radius: 0 !imporant;
-  stroke-width: 2 !important;
 }
 
 /* Hover/selected states a bit darker gray */
