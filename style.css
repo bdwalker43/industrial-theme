@@ -102,7 +102,12 @@ input, select, textarea,
 .red-ui-flow-node-icon circle,
 .red-ui-flow-node-icon polygon {
     fill: #5df2ec !important; 
-     border: 4px solid #0000ff !important;
+    border: 4px solid #0000ff !important;
+    border-radius: 0px !important;
+    rx: 0 !important;
+    ry: 0 !important;
+    stroke: #0000ff !important;
+    stroke-width: 2px !important;
 }
 
 /* Fallback for icons using currentColor or inherit */
@@ -119,13 +124,13 @@ input, select, textarea,
 .red-ui-flow-node-icon-shape rect,
 .red-ui-flow-node-icon-background ellipse,
 .red-ui-flow-node-icon-shape ellipse {
-    fill-opacity: 1 !important; 
+    fill-opacity: 0.4 !important; 
     rx: 0 !important;
     ry: 0 !important;
     stroke: #0000ff !important;
     stroke-width: 2px !important;
 }
 .red-ui-flow-node-icon-shade-border {
-    stroke-width: 2;
+    stroke-width: 3;
 }
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
