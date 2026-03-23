@@ -17,11 +17,8 @@
 .red-ui-flow-node-status-background {
   fill: transparent !important;
   background: transparent !important;
-
+  fill-opacity: 0 !important;
 }
-
-
-/* Blue header band on top of every node (T3000 style) */
 .red-ui-flow-node {
   position: relative;
   stroke-width: 3 !important;
@@ -72,14 +69,14 @@ input, select, textarea,
     fill: #000000 !important;       /* Pure black fill */
     stroke: #000000 !important;     /* Black border if any */
     stroke-width: 1px !important;   /* Thin border or adjust to 0 for no outline */
-    r: 10 !important;
+    r: 5 !important;
     border-radius: 50 !important;/* Radius – default is usually ~6-7px; 4-5px = small */
 }
 
 /* Optional: Make them even smaller / more minimal */
 .red-ui-flow-port-input rect,
 .red-ui-flow-port-output rect {
-    r: 10 !important;                /* Tiny circles */
+    r: 5 !important;                /* Tiny circles */
     border-radius: 50 !important;
 }
 
