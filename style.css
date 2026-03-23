@@ -120,8 +120,11 @@ input, select, textarea,
 .red-ui-flow-node-icon-background ellipse,
 .red-ui-flow-node-icon-shape ellipse {
     fill-opacity: 1 !important; 
-    rx: 1 !important;
-    ry: 1 !important;
+    rx: 0 !important;
+    ry: 0 !important;
     stroke: #0000ff !important;
     stroke-width: 2px !important;
+}
+.red-ui-flow-node-icon-shade-border {
+    stroke-width: 2;
 }
