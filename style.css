@@ -27,13 +27,21 @@
   stroke-width: 1 !important;
 }
 .red-ui-palette-node {
-  background: #ffffff !important;
+  background-color: #ffffff !important;
   border-radius: 1px !important;
   border: 3px solid #0000ff !important;
   fill: #ffffff !important;
   stroke-width: 3 !important
-  
-
+}
+.red-ui-palette-port {
+  background: #000000 !important;
+  border: #000000 !important;
+  width: 9px !important; 
+  height: 9px !important;
+  border-radius: 50px !important;
+}
+.red-ui-button {
+  background: #ffffff;
 }
 .red-ui-flow-node::before {
   content: "";
@@ -69,7 +77,8 @@ input, select, textarea,
 
 .red-ui-flow-port-input,
 .red-ui-flow-port-output {         
-    opacity: 1 !important;  
+    opacity: 1 !important; 
+    border-radius: 50px !important;
 
 }
 
@@ -82,6 +91,7 @@ input, select, textarea,
     r: 2 !important;
     width: 7px !important;
     height: 7px !important;
+    border-radius: 50px !important;
     
 }
 
@@ -89,6 +99,7 @@ input, select, textarea,
 .red-ui-flow-port-input rect,
 .red-ui-flow-port-output rect {
     r: 2 !important;  
+    border-radius: 50px !important;
 
 
 }
