@@ -62,6 +62,8 @@ input, select, textarea,
 .red-ui-flow-port-output {         
     opacity: 1 !important;  
     border-radius: 50 !important;
+    rx: 30 !important;
+    ry: 30 !important;
 }
 
 /* Target the actual circle inside the <g> group */
