@@ -11,10 +11,8 @@
 .red-ui-flow-node * {
   rx: 0 !important;
   ry: 0 !important;
-  stroke-width: 2 !important;
   border-radius: 0 !important;
   fill: #c0c0c0 !important;
-  stroke: #0000ff !important;
 }
 
 /* Blue header band on top of every node (T3000 style) */
