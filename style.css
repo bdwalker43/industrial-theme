@@ -104,3 +104,39 @@ input, select, textarea,
 
 }
 
+/* Target the main icon container - covers most cases */
+.red-ui-flow-node-icon,
+.red-ui-flow-node .red-ui-flow-node-icon,
+.red-ui-flow-node-icon > svg,
+.red-ui-flow-node-icon > img {
+    fill: #0000ff !important;       /* Black for SVG fill */
+    color: #0000ff !important;      /* Black for font/icon color */
+}
+
+/* Specifically target inline SVG icons (common for contrib nodes) */
+.red-ui-flow-node-icon svg {
+    fill: #0000ff !important;
+}
+
+/* If icons are paths inside SVGs (very common) */
+.red-ui-flow-node-icon path,
+.red-ui-flow-node-icon circle,
+.red-ui-flow-node-icon rect,
+.red-ui-flow-node-icon polygon {
+    fill: #0000ff !important;
+    stroke: #0000ff !important;     /* If any outlines */
+}
+
+/* For font-awesome / material icons that use color instead of fill */
+.red-ui-flow-node-icon i,
+.red-ui-flow-node-icon .fa,
+.red-ui-flow-node-icon [class*="fa-"] {
+    color: #0000ff !important;
+}
+
+/* Optional: Darken on hover/selection for better visibility */
+.red-ui-flow-node:hover .red-ui-flow-node-icon,
+.red-ui-flow-node.selected .red-ui-flow-node-icon {
+    fill: #0000ff !important;
+    color: #0000ff !important;
+}
