@@ -64,8 +64,8 @@ input, select, textarea,
 }
 
 /* Target the actual circle inside the <g> group */
-.red-ui-flow-port-input rect,
-.red-ui-flow-port-output rect {
+.red-ui-flow-port-input,
+.red-ui-flow-port-output {
     fill: #000000 !important;       
     stroke: #000000 !important;     
     stroke-width: 1px !important;   
@@ -76,8 +76,8 @@ input, select, textarea,
 }
 
 /* Optional: Make them even smaller / more minimal */
-.red-ui-flow-port-input rect,
-.red-ui-flow-port-output rect {
+.red-ui-flow-port-input,
+.red-ui-flow-port-output {
     r: 3 !important;                
     border-radius: 50 !important;
     rx: 1 !important;
