@@ -1,0 +1,12 @@
+{
+  "name": "node-red-contrib-industrial-theme",
+  "version": "1.0.0",
+  "description": "Ben's custom Node-RED theme",
+  "keywords": ["node-red"],
+  "license": "MIT",
+  "node-red": {
+    "plugins": {
+      "industrial-theme": "theme.js"
+    }
+  }
+}
