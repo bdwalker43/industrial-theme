@@ -64,23 +64,20 @@ input, select, textarea,
 }
 
 /* Target the actual circle inside the <g> group */
-.red-ui-flow-port-input,
-.red-ui-flow-port-output {
+.red-ui-flow-port-input rect,
+.red-ui-flow-port-output rect {
     fill: #000000 !important;       
     stroke: #000000 !important;     
     stroke-width: 1px !important;   
-    r: 3 !important;
-    border-radius: 50 !important;
-    rx: 1 !important;
-    ry: 1 !important;
+    r: 2 !important;
+    width: 5px !important;
+
 }
 
 /* Optional: Make them even smaller / more minimal */
-.red-ui-flow-port-input,
-.red-ui-flow-port-output {
-    r: 3 !important;                
-    border-radius: 50 !important;
-    rx: 1 !important;
-    ry: 1 !important;
+.red-ui-flow-port-input rect,
+.red-ui-flow-port-output rect {
+    r: 2 !important;                
+
 }
 
